@@ -147,7 +147,7 @@ dispatcher.onGet(/^\/ratings\/[0-9]*/, function (req, res) {
           db.collection('ratings').find({}).toArray(function (err, data) {
             if (err) {
               res.writeHead(500, {'Content-type': 'application/json'})
-              res.end(JSON.stringify({error: 'could not load ratings from database'}))
+              res.end(JSON.stringify({error: 'could not load ratings from database test'}))
             } else {
               firstRating = data[0].rating
               secondRating = data[1].rating
