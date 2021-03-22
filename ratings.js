@@ -73,7 +73,7 @@ dispatcher.onPost(/^\/ratings\/[0-9]*/, function (req, res) {
     ratings = JSON.parse(req.body)
   } catch (error) {
     res.writeHead(400, {'Content-type': 'application/json'})
-    res.end(JSON.stringify({error: 'please provide valid ratings JSON'}))
+    res.end(JSON.stringify({error: 'please provide valid ratings JSON Test'}))
     return
   }
 
